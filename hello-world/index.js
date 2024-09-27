@@ -1,5 +1,5 @@
 const hello = () => {
-    return "Hello world from JavaScript!!"
+    return "Hello world from Github!!"
 }
 
 console.log(hello());
