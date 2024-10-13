@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capstone Project 1</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/registration.css" />
+</head>
+
+<body>
+  <div id="mainContainer" class="shadow-black flex flex-col justify-center p-12 shadow-black mx-auto rounded mt-16">
+    <div id="form-title" class="py-3">
+      <h1 id="heading">Registration Form</h1>
+    </div>
+    <div id="form-content">
+      <form action="" id="user-form" class="flex flex-col max-w-lg">
+        <label for="name" class="font-medium">Name<sup id="asterisk-required">*</sup></label>
+        <input id="name" type="text" name="name" required placeholder="Enter full name"
+          class="shadow-inner border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 bg-gray-100 p-2 rounded my-3" />
+        <label for="email" class="font-medium">Email<sup id="asterisk-required">*</sup></label>
+        <input id="email" type="email" name="email" required placeholder="Enter email"
+          class="shadow-inner border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 bg-gray-100 p-2 rounded my-3" />
+
+        <label for="password" class="font-medium">Password<sup id="asterisk-required">*</sup></label>
+        <input id="password" type="password" name="password" required placeholder="Enter password"
+          class="shadow-inner border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 bg-gray-100 p-2 rounded my-3" />
+
+        <label for="dob" class="font-medium">Date of birth<sup id="asterisk-required">*</sup></label>
+        <input id="dob" type="date" name="dob" required
+          class="shadow-inner border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 bg-gray-100 p-2 rounded my-3" />
+        <div id="terms-container" class="flex">
+          <input id="acceptTerms" type="checkbox" name="acceptTerms" class="mr-2" required />
+          <label for="acceptTerms" class="font-medium">Accept Terms & Conditions</label>
+        </div>
+
+        <button type="submit" id="submit-btn" class="rounded p-3 my-3">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <div id="dataEntries" class="shadow-black p-12 shadow-black mx-auto rounded mt-16">
+    <h1 id="entries-heading">Entries</h1>
+    <div id="table-container"></div>
+  </div>
+  <script src="registration.js"></script>
+</body>
+
+</html>
